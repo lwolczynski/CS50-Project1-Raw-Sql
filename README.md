@@ -18,4 +18,4 @@ Run create_tables.py to prepare your database and import.py if you want to impor
 Before you run app.py set your environmental variables (postgres database path, secret key and goodreads API key) — see .env file.
 
 ## Demo
-This project has been deployed on Heroku. You can see in deployed [here](/).
+This project has been deployed on Heroku. You can see in deployed [here](https://cs50-project1-lw.herokuapp.com/).
