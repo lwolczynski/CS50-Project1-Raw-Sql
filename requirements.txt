@@ -2,4 +2,5 @@ Flask
 Gunicorn==19.9.0
 Jinja2
 SQLAlchemy
+Requests
 Werkzeug
