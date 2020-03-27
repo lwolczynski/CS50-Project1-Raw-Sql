@@ -1,0 +1,6 @@
+# Creates postgres db tables based on models.py
+
+from app import app, db
+
+with app.app_context():
+    db.create_all()

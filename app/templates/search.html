@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}Books | search{% endblock %}
+
+{% block body %}
+            Search for books
+            <form action="{{ url_for('search') }}" method="post">
+                ISBN, author or title:<br>
+                <input type="text" name="search" value=""><br><br>
+                <input type="submit" value="Submit">
+            </form>{% if books %}
+            <br>
+            <table style="width:100%">
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th>Year</th>
+                </tr>{% for book in books %}
+                <tr>
+                    <td><a href={{ url_for('books', book_id=book.book_id) }}>{{ book.title }}</a></td>
+                    <td>{{ book.author }}</td>
+                    <td>{{ book.isbn }}</td>
+                    <td>{{ book.year }}</td>
+                </tr>{% endfor %}
+            </table>{% endif %}
+{% endblock %}

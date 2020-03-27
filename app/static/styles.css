@@ -1,0 +1,11 @@
+/* Modifications to used bootstrap file */
+
+ul {
+    list-style-type: disc !important;
+    padding-left: 1em !important;
+    margin-left: 1em;
+}
+
+.container {
+    margin-bottom: 1em;
+}
