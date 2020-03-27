@@ -3,6 +3,7 @@ Flask_login
 Flask_sqlalchemy
 Gunicorn==19.9.0
 Jinja2
+Psycopg2
 SQLAlchemy
 Requests
 Werkzeug
