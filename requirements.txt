@@ -1,5 +1,5 @@
 Flask
-Gunicorn=19.9.0
+Gunicorn==19.9.0
 Jinja2
 SQLAlchemy
 Werkzeug
