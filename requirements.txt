@@ -2,7 +2,6 @@ Flask
 Flask_login
 Gunicorn==19.9.0
 Jinja2
-Models
 SQLAlchemy
 Requests
 Werkzeug
