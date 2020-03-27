@@ -5,7 +5,7 @@ from flask import Flask, session
 from flask import render_template, request, redirect, url_for
 from flask_login import LoginManager, login_user, current_user, logout_user, login_required
 from sqlalchemy import and_, or_
-from models import *
+from .models import *
 from werkzeug.security import generate_password_hash
 
 app = Flask(__name__)
