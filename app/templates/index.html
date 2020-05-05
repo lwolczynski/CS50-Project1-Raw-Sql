@@ -3,7 +3,7 @@
 {% block title %}Books | homepage{% endblock %}
 
 {% block body %}
-            {% if current_user.is_authenticated %}
+            {% if session['username'] %}
             <a href={{ url_for('search') }}>Search for books</a>
             {% else %}
             <a href={{ url_for('login') }}>Login</a><br>

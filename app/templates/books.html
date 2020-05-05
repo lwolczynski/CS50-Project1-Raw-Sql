@@ -34,6 +34,6 @@
             Other reviews:{% for review in db_reviews %}
                 <ul>
                 {% if review.review_text!="" %}{{ review.review_text }}<br>{% endif %}
-                <i>Rated {{ review.review_score }}/5 by {{ review.getUsername() }}</i>
+                <i>Rated {{ review.review_score }}/5 by {{ review.username }}</i>
                 </ul>{% endfor %}{% endif %}
 {% endblock %}

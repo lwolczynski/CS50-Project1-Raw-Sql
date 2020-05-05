@@ -7,7 +7,7 @@
     </head>
     <body>
         <div class="container">
-            {% if current_user.is_authenticated %}Hello {{ current_user.username }}! It is not you? <a href={{ url_for('logout') }}>Logout</a>{% else %} Not logged in {% endif %} | Bring me to <a href={{ url_for('index') }}>homepage</a>
+            {% if session['username'] %}Hello {{ session['username'] }}! It is not you? <a href={{ url_for('logout') }}>Logout</a>{% else %} Not logged in {% endif %} | Bring me to <a href={{ url_for('index') }}>homepage</a>
         </div>
         <div class="container">{% block body %}{% endblock %}
         </div>
