@@ -3,5 +3,6 @@ Flask-session
 Flask_sqlalchemy
 Gunicorn==19.9.0
 Jinja2
+Psycopg2
 Requests
 Werkzeug==0.16.0
