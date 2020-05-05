@@ -4,4 +4,4 @@ Flask_sqlalchemy
 Gunicorn==19.9.0
 Jinja2
 Requests
-Werkzeug
+Werkzeug==0.16.0
