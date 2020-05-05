@@ -12,7 +12,7 @@ app = Flask(__name__)
 
 # Configure session to use filesystem
 ### Change path to your postgres database below ###
-app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv['SQLALCHEMY_DATABASE_URI']
+app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv('SQLALCHEMY_DATABASE_URI')
 app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
